@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import './upcomming.scss'
 
 const ComedyDetail = () => {
-    const apikey=process.env.REACT_APP_API_KEY;
+    const apikey=import.meta.env.VITE_API_KEY;
     const {id}=useParams();
     const [isloading, setIsLoading]=useState(true);
     const [m, setM]=useState(null);

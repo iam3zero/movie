@@ -14,7 +14,7 @@ import './home.scss';
 import { Autoplay, FreeMode, } from 'swiper/modules';
 
 const Home = () => {
-    const apikey=process.env.REACT_APP_API_KEY;
+    const apikey=import.meta.env.VITE_API_KEY;
 
     const [appMovie, setAppMovie] = useState([]);
     const [isLoading, setIsLoading] = useState(true);

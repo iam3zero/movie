@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import './romance.scss'
 
 const Romance = () => {
-    const apikey=process.env.REACT_APP_API_KEY;
+    const apikey=import.meta.env.VITE_API_KEY;
     const [romance, setRomance] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 

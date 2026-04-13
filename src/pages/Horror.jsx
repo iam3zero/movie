@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import './horror.scss'
 
 const Horror = () => {
-    const apikey=process.env.REACT_APP_API_KEY;
+    const apikey=import.meta.env.VITE_API_KEY;
     const [horror, setHorror] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
